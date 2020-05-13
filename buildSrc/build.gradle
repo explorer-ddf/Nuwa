@@ -1,0 +1,14 @@
+apply plugin: 'groovy'
+
+//repositories {
+//    mavenCentral()
+//    jcenter()
+//}
+//
+//
+//
+//dependencies {
+//    compile gradleApi()
+//    compile "commons-io:commons-io:1.4"
+//    compile 'commons-codec:commons-codec:1.6'
+//}

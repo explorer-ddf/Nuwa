@@ -1,13 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 22
-    buildToolsVersion "23.0.1"
+    compileSdkVersion 26
 
     defaultConfig {
         applicationId "cn.jiajixin.nuwasample"
-        minSdkVersion 9
-        targetSdkVersion 22
+        minSdkVersion 23
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
     }
@@ -22,20 +21,21 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    productFlavors {
-        qihoo {
-        }
-        xiaomi {
-        }
-    }
+
+//    productFlavors {
+//        qihoo {
+//        }
+//        xiaomi {
+//        }
+//    }
 
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile project(":nuwa")
-    compile 'com.android.support:appcompat-v7:22.2.1'
-    compile 'com.android.support:design:22.2.1'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(":nuwa")
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
 }
 
-apply plugin: "cn.jiajixin.nuwa"
+//apply plugin: "cn.jiajixin.nuwa"
