@@ -38,4 +38,11 @@ dependencies {
     implementation 'com.android.support:design:26.1.0'
 }
 
-//apply plugin: "cn.jiajixin.nuwa"
+/**
+ *  插件名，为META-INF下的文件名
+ */
+apply plugin: "cn.jiajixin.nuwa"
+
+//nuwa {
+//    excludeClass = ['BaseApplication.class']
+//}
